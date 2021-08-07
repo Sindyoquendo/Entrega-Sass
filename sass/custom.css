@@ -52,8 +52,8 @@ img {
   text-align: center;
   color: black;
   font-style: oblique;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 20px;
 }
 
@@ -127,51 +127,56 @@ tr:hover td {
 /*Inicio de estilos del footer*/
 footer {
   width: 100%;
+  padding: 10px 0px;
   background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);
-  /*gradientes*/
+}
+
+.titulosFooter {
+  font-size: 15px;
+}
+
+.parrafoFooter {
+  font-size: 10px;
+}
+
+.container_footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1400px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.box_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+}
+
+.Div_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-}
-
-footer .forSuscribirse {
-  margin: 0px;
-  padding: 0px;
-  width: 20%;
-  border: 0;
-  margin-left: 480px;
-  margin-right: 480px;
-  text-align: center;
-  line-height: 150%;
-}
-
-.Conteiner {
-  padding: 10px;
-  text-align: Center;
-  color: black;
-}
-
-.Conteiner p {
-  width: 90%;
-  margin: 40px auto;
-  font-size: 15px;
-  font-weight: 300;
-  text-align: center;
-  line-height: 150%;
-  margin-top: 5px;
-  margin-bottom: 10px;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 15px;
+  background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);
+  border-radius: 10px;
 }
 
 .email-box {
@@ -182,18 +187,64 @@ footer .forSuscribirse {
   justify-self: center;
 }
 
-.RedesSociales {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.icon_top {
+  width: 45px;
+  height: 30px;
+  margin: 5px 5px 5px 5px;
 }
 
-.RedesSociales i {
-  font-size: 30px;
-  padding: 20px;
+.box_footer .logo img {
+  width: 130px;
+  margin-left: 60px;
+}
+
+.terms_sus {
+  font-size: 15px;
+  margin-bottom: 5px;
+  font-weight: 450;
+  margin-left: -80px;
+}
+
+.box_footer .terms {
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 300;
+  color: #7a7a7a;
+  font-size: 20px;
+}
+
+.box_footer h2, .box_footer .h2 {
+  margin-bottom: 15px;
+  color: #343434;
+  font-weight: 500;
+}
+
+.box_footer a {
+  margin-top: 10px;
+  color: black;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.box_footer a:hover {
+  opacity: 0.9;
+  background: #FAEBD7;
+}
+
+.box_footer a .fab {
+  font-size: 25px;
+}
+
+.box_copyright {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.box_copyright p {
+  margin-top: 10px;
+  color: #7a7a7a;
 }
 
 /*Fin estilos del footer*/
@@ -315,6 +366,10 @@ footer .forSuscribirse {
   background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);
 }
 
+.card {
+  width: auto;
+}
+
 .btn-outline-success {
   color: black;
   border-color: #ada397;
@@ -426,51 +481,30 @@ input[type="reset"]:hover {
 }
 
 /*Inicio sección nosotros*/
-.main {
+.contenedor_nosotros {
   background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-style: italic;
-  padding: 10px 20px 10px 20px;
-  position: relative;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
-.main .mainSection {
-  font-size: 20px;
-  padding-right: 30px;
-  width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.nosotros {
+  margin-top: 20px;
+  width: 100%;
+  height: 90%;
 }
 
-.main .mainAside {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-aside {
-  text-align: center;
-}
-
-aside .Inicio {
+.Inicio {
   color: #7D6B7D;
-  font-weight: 500;
-  margin-top: 10px;
+  font-weight: 200;
+  margin-top: 30px;
+  text-align: justify;
+}
+
+.imagenDestacado {
+  width: 80%;
+  height: 80%;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 /*Fin sección nosotros*/
@@ -481,8 +515,8 @@ aside .Inicio {
 
 .barra {
   background-color: #f5f5f5;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .seguir {
@@ -493,7 +527,7 @@ aside .Inicio {
 /*Mobile first*/
 @media (max-width: 576px) {
   .bienvenido {
-    background-color: #d6cbd3;
+    background-color: #fefbd8;
   }
   .grilla {
     display: -ms-grid;
@@ -543,7 +577,7 @@ aside .Inicio {
 
 @media (max-width: 1024px) {
   .bienvenido {
-    background-color: #fefbd8;
+    background-color: #FAEBD7;
   }
   .nav {
     background-color: #fefbd8;
@@ -3708,7 +3742,7 @@ textarea.form-control-lg {
       -ms-user-select: none;
           user-select: none;
   background-color: transparent;
-  border: 1px solid transparent;
+  border: 1px solid;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   border-radius: 0.25rem;

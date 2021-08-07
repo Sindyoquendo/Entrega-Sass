@@ -49,8 +49,8 @@ img{
 	text-align: center;
 	color: black;
     font-style: oblique;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	font-size: 20px;
 }
 
@@ -126,58 +126,109 @@ tr:hover td{
 
 footer{
 	width: 100%;
-	background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);/*gradientes*/
+	padding: 10px 0px;
+	background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);
+}
+
+.titulosFooter{
+	font-size: 15px;
+}
+.parrafoFooter{
+	font-size: 10px;
+}
+
+.container_footer{
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-	flex-flow: row wrap;
-	
-		.forSuscribirse{
-		margin: 0px;
-		padding: 0px;
-		width: 20%;
-		border:0;
-		margin-left: 480px;
-		margin-right:480px;
-		text-align: center;
-		line-height: 150%;
-		}
-	}
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1400px;
+	margin: auto;
+	margin-top: 10px;
+}
 
-.Conteiner{
-	
-	padding: 10px;
-	text-align:  Center;
-	color: black;
+.box_footer{
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+}
 
-		p{
-		width: 90%;
-		margin: 40px auto;
-		font-size: 15px;
-		font-weight: 300;
-		text-align: center;
-		line-height: 150%;
-		margin-top:5px;
-		margin-bottom: 10px;
-		}
-	}
-
+.Div_footer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 15px;
+	background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);
+	border-radius: 10px;
+}
 
 .email-box{
 	height: 40px;
 	display: flex;
 	justify-self: center;
+}
+
+.icon_top{
+	width: 45px;
+    height: 30px;
+    margin: 5px 5px 5px 5px;
+}
+
+.box_footer .logo img{
+	width: 130px;
+	margin-left: 60px;
+}
+
+
+.terms_sus{
+	font-size: 15px;
+	margin-bottom: 5px;
+	font-weight: 450;
+	margin-left: -80px;
 	
-		}
-		.RedesSociales{
-		display: flex;
-		justify-content: center;
-			i{
-			font-size: 30px;
-			padding: 20px;
-		}
-	}
+}
+
+.box_footer .terms{
+	max-width: 350px;
+	margin-top: 20px;
+	font-weight: 300;
+	color: #7a7a7a;
+	font-size: 20px;
+}
+
+.box_footer h2{
+	margin-bottom: 15px;
+	color: #343434;
+	font-weight: 500;
+}
+
+.box_footer a{
+	margin-top: 10px;
+	color: black;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+.box_footer a:hover{
+	opacity: 0.9;
+	background: #FAEBD7;
+}
+
+.box_footer a .fab{
+	font-size: 25px;
+}
+
+.box_copyright {
+	max-width: 1200px;
+	margin: auto;
+	text-align: center;
+	padding: 0px 20px;
+}
+
+.box_copyright p{
+	margin-top: 10px;
+	color: #7a7a7a;
+}
+
 /*Fin estilos del footer*/
 
 /*Inicio Estilos de imagenes*/
@@ -257,7 +308,9 @@ text-align: center;
 	background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);
 	}
 }
-
+.card{
+	width: auto;
+}
 .btn-outline-success{
 	    color: black;
 	    border-color: #ada397;
@@ -358,36 +411,30 @@ input[type="reset"]:hover{
 
 /*Inicio sección nosotros*/
 
-.main {
+.contenedor_nosotros{
 	background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
-	display: flex;
-	font-style: italic;
-	padding: 10px 20px 10px 20px;
-	position: relative;
-	.mainSection {
-		font-size: 20px;
-		padding-right: 30px;
-		width: 60%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		
-	}
-	.mainAside {
-		width: 50%;
-		display: flex;
-		flex-direction: column;
-		
-	}
+	margin-bottom: 30px;
+	margin-top: 30px;
 }
 
-aside {
-    text-align: center;
-    .Inicio {
-        color: #7D6B7D;
-        font-weight: 500;
-		margin-top: 10px;
-    }
+.nosotros{
+	margin-top: 20px;
+	width: 100%;
+    height: 90%;
+}
+
+.Inicio {
+	color: #7D6B7D;
+	font-weight: 200;
+	margin-top: 30px;
+	text-align: justify;
+}
+
+.imagenDestacado{
+	width: 80%;
+	height: 80%;
+	margin-top: 30px;
+	margin-left: 30px;
 }
 /*Fin sección nosotros*/
 
@@ -398,8 +445,8 @@ aside {
 
 .barra{
 	background-color: #f5f5f5;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .seguir{
@@ -411,7 +458,7 @@ aside {
 
 @media (max-width: 576px){
 	.bienvenido{
-		background-color: #d6cbd3;
+		background-color: #fefbd8;
 	}
 
 	.grilla{
@@ -466,7 +513,7 @@ aside {
 @media (max-width: 1024px){
 
 	.bienvenido{
-		background-color: #fefbd8;
+		background-color: #FAEBD7;
 		}
 	.nav{
 		background-color: #fefbd8;
