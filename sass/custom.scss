@@ -241,8 +241,7 @@ footer{
 .flexContainer{
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: center;
-	align-items: flex-center;
+	justify-content: center;	
 	align-content: center;
 	background-color: white;
 	padding: 10px;
@@ -252,20 +251,12 @@ footer{
 		text-align: center;
 		line-height: 75px;
 		font-size: 30px;
-		border: 1px solid black;
+		border: 1px solid #ccc;
 		flex-grow: 1;
 		position: relative;
 		}
 	}
 /*Fin Estilos de imagenes*/
-
-.FlexFormulario{
-	display: flex;
-	flex-direction: row;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-content: center;
-}
 
 /*Inicio estilos Productos detacados*/
 
@@ -354,16 +345,33 @@ text-align: center;
 	font-size: 15px;
 
 }
+/*Estilos formulario*/
+
+.FlexFormulario{
+	display: flex;
+	flex-direction: row;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+.tituloContacto{
+	font-size: 15px;
+}
+
+.parrafoTerminos{
+	font-size: 10px;
+}
 
 form{
 	align-items: center;
 	align-content: center;
 	width: 40%;
 	border: 1px solid #ccc;
-	margin: 20px;
-	padding: 20px;
-	margin-left: 400px;
-	margin-right: 400px;
+	margin: 25px;
+	padding: 25px;
+	margin-left: 350px;
+	margin-right: 350px;
 }
 
 label{
@@ -373,7 +381,7 @@ label{
 
 textarea{
 	resize: vertical;
-	max-height: 250px;
+	max-height: 120px;
 	min-height: 50px ;
 }
 input, textarea{
