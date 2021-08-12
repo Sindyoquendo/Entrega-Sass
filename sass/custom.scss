@@ -1,9 +1,8 @@
 /*Inicio estilos propios*/
-
 *{
 	margin:0;
 	padding:0;
-	}
+}
 
 /*Inicio Logo*/
 .center{
@@ -29,20 +28,20 @@ width: 100%;
 	width: 100%;
 	height: 100%;
 	transition: all;
-	
-		&:hover{
+	&:hover{
 	height: 40px;
 	background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);
-		}
-	}
+}
+}
 
-	.compras{
+.compras{
 		width:30px;
 		height:30px;
 		margin-left: 50px;
 	}
 /*Fin de Estilos Letrero de Bienvenida*/
 
+/*Estilos Generales*/
 h2{
 	text-align: center;
 }
@@ -60,7 +59,6 @@ img{
 	font-size: 20px;
 }
 
-
 .tituloPreguntas{
 	text-align: left;
 	margin-top: 1em;
@@ -75,10 +73,12 @@ img{
 	margin-left: 80px;
 	list-style: inherit;
 }
+
 .parrafoPreguntas{
 	text-align: left;
 	margin-left: 50px;
 }
+
 .SeccionDeInicio{
 	background-color: #f6f6f8;
 	margin-top: 20px;
@@ -98,7 +98,6 @@ p {
 }
 
 /*Inicio Estilo de Tabla*/
-
 table{
 	background-color: white;
 	text-align: center;
@@ -108,7 +107,6 @@ table{
 	margin-top: 1em;
 	margin-left: 3em;
 	margin-bottom: 1em;
-
 	th, td{
 	padding: 10px;
 		}
@@ -127,20 +125,14 @@ tr:hover td{
 	color: white;
 	}
 
-
 /*Inicio de estilos del footer*/
-
 footer{
 	width: 100%;
 	padding: 10px 0px;
 	background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);
-}
-
-.titulosFooter{
-	font-size: 15px;
-}
-.parrafoFooter{
-	font-size: 10px;
+	.titulosFooter{
+		font-size: 15px;
+	}
 }
 
 .container_footer{
@@ -150,21 +142,19 @@ footer{
 	max-width: 1400px;
 	margin: auto;
 	margin-top: 10px;
-}
-
-.box_footer{
-	display: flex;
-	flex-direction: column;
-	padding: 30px;
-}
-
-.Div_footer{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	padding: 15px;
-	background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);
-	border-radius: 10px;
+	.box_footer{
+		display: flex;
+		flex-direction: column;
+		padding: 30px;
+		.Div_footer{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			padding: 15px;
+			background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);
+			border-radius: 10px;
+		}
+	}
 }
 
 .email-box{
@@ -184,7 +174,6 @@ footer{
 	margin-left: 60px;
 }
 
-
 .terms_sus{
 	font-size: 15px;
 	margin-bottom: 5px;
@@ -192,27 +181,11 @@ footer{
 	margin-left: -80px;
 	
 }
-
-.box_footer .terms{
-	max-width: 350px;
-	margin-top: 20px;
-	font-weight: 300;
-	color: #7a7a7a;
-	font-size: 20px;
-}
-
 .box_footer h2{
 	margin-bottom: 15px;
 	color: #343434;
 	font-weight: 500;
-}
-
-.box_footer a{
-	margin-top: 10px;
-	color: black;
-	font-weight: 300;
-	text-decoration: none;
-}
+	}
 
 .box_footer a:hover{
 	opacity: 0.9;
@@ -245,7 +218,7 @@ footer{
 	align-content: center;
 	background-color: white;
 	padding: 10px;
-		.FlexHijo{
+	.FlexHijo{
 		width: 390px;
 		margin: 20px;
 		text-align: center;
@@ -254,12 +227,11 @@ footer{
 		border: 1px solid #ccc;
 		flex-grow: 1;
 		position: relative;
-		}
 	}
+}
 /*Fin Estilos de imagenes*/
 
 /*Inicio estilos Productos detacados*/
-
 .animacion{
 text-align: center;
 	color: black;    
@@ -296,9 +268,7 @@ text-align: center;
 }
 /*Fin estilos Productos detacados*/
 
-
 /*Modificación de boostrap*/
-
 .card-footer{
 	text-align: center;
 &:hover{
@@ -343,10 +313,9 @@ text-align: center;
 	padding: 10px;
 	border-radius: 10px;
 	font-size: 15px;
-
 }
-/*Estilos formulario*/
 
+/*Estilos formulario*/
 .FlexFormulario{
 	display: flex;
 	flex-direction: row;
@@ -384,6 +353,7 @@ textarea{
 	max-height: 120px;
 	min-height: 50px ;
 }
+
 input, textarea{
 	margin-bottom: 10px;
 	width: 100%;
@@ -391,9 +361,11 @@ input, textarea{
 	box-sizing: border-box;
 	border: 1px solid #ccc;
 }
+
 input:focus,textarea:focus {
 	border: 1px solid #1668c4;
 }
+
 input[type="Submit"]{
 	margin-bottom: 0px;
 	background-color: #ccc;
@@ -401,10 +373,12 @@ input[type="Submit"]{
     border: none;
     margin-bottom: 10px;
 }
+
 input[type="Submit"]:hover{
 	background-color: #787878;
 	cursor: pointer;
 }
+
 input[type="reset"]{
 	margin-bottom: 0px;
 	background-color: #ccc;
@@ -417,14 +391,11 @@ input[type="reset"]:hover{
 	cursor: pointer;
 }
 
-
 .navbar-nav a:hover {
 	background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);;
-
 }
 
-/*Inicio sección nosotros*/
-
+/*Inicio Pagina nosotros*/
 .contenedor_nosotros{
 	background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
 	margin-bottom: 30px;
@@ -450,8 +421,8 @@ input[type="reset"]:hover{
 	margin-top: 30px;
 	margin-left: 30px;
 }
-/*Fin sección nosotros*/
 
+/*Fin sección nosotros*/
 .sectionDestcados{
 	margin-top: 50px;
 	margin-bottom: 50px;
@@ -469,7 +440,6 @@ input[type="reset"]:hover{
 }
 
 /*Mobile first*/
-
 @media (max-width: 576px){
 	.bienvenido{
 		background-color: #fefbd8;
@@ -506,6 +476,7 @@ input[type="reset"]:hover{
 	.nav{
 		background-color: #b2b2b2;
 	}
+
 	footer{
 		background-color: #b2b2b2;
 	}
@@ -521,8 +492,8 @@ input[type="reset"]:hover{
 	height: 250px;
 	padding: 3px;
 	border: 2px solid black;
-	}
-	}
+}
+}
 
 @media (max-width: 1024px){
 
@@ -537,8 +508,6 @@ input[type="reset"]:hover{
 	}
 }
 
-
-
 /*Inicio Modificaciones Boostrap*/
 $font-family-sans-serif: 'Mulish', sans-serif; 
 $gray-100:#FAEBD7; 
@@ -546,7 +515,5 @@ $card-cap-bg: #d6cbd3;
 $h2-font-size: 20px;
 $carousel-caption-width: 30%;
 /*Fin Modificaciones Boostrap*/
-
-
 
 @import "../node_modules/bootstrap/scss/bootstrap";
